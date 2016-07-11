@@ -10,6 +10,16 @@ const user = {
   online: true,
 };
 
+const onLinkClick = (link) => {
+  // eslint-disable-next-line no-alert
+  alert(`route to ${link.url}`);
+};
+
+const onButtonClick = (button) => {
+  // eslint-disable-next-line no-alert
+  alert(`button ${button.text} clicked`);
+};
+
 export default function () {
   return (
     <UserMenu
@@ -18,14 +28,16 @@ export default function () {
       title={`${user.name} - ${user.title}`}
       description={`Member since ${user.joined}`}
       links={[
-        { key: 1, text: 'followers', url: '/followers' },
+        { key: 1, text: 'Followers', url: '/followers' },
         { key: 2, text: 'Sales', url: '/sales' },
         { key: 3, text: 'Friends', url: '/friends' },
       ]}
       buttons={[
-        { key: 1, text: 'Profile', align: 'left', url: '/profile' },
-        { key: 2, text: 'Sign out', align: 'right', url: '/signout' },
+        { key: 1, text: 'Profile', align: 'left' },
+        { key: 2, text: 'Sign out' },
       ]}
+      onLinkClick={onLinkClick}
+      onButtonClick={onButtonClick}
     />
   );
 }
