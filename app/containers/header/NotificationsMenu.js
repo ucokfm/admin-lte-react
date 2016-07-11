@@ -75,8 +75,23 @@ const notifications = [
   },
 ];
 
+const onItemClick = (item) => {
+  // eslint-disable-next-line no-alert
+  alert(`item ${item.id} clicked`);
+};
+
+const onFooterClick = () => {
+  // eslint-disable-next-line no-alert
+  alert('footer clicked');
+};
+
+
 export default function () {
   return (
-    <NotificationsMenu notifications={notifications} />
+    <NotificationsMenu
+      items={notifications}
+      onItemClick={onItemClick}
+      onFooterClick={onFooterClick}
+    />
   );
 }
