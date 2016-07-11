@@ -50,11 +50,11 @@
     "webpack-dev-server": "^1.14.1"
   },
   "peerDependencies": {
+    "admin-lte": "2.3.5",
     "react": "^15.0.1",
     "react-dom": "^15.0.1"
   },
   "dependencies": {
-    "admin-lte": "^2.3.5",
     "classnames": "^2.2.5",
     "moment": "^2.13.0"
   }
