@@ -39,6 +39,6 @@ const messages = [
 
 export default function () {
   return (
-    <MessagesMenu messages={messages} />
+    <MessagesMenu items={messages} />
   );
 }
