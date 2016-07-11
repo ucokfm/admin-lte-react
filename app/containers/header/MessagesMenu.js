@@ -37,8 +37,20 @@ const messages = [
   },
 ];
 
+const onItemClick = (item) => {
+  alert(`hey ${item.name}`);
+};
+
+const onFooterClick = () => {
+  alert('footer here');
+};
+
 export default function () {
   return (
-    <MessagesMenu items={messages} />
+    <MessagesMenu
+      items={messages}
+      onItemClick={onItemClick}
+      onFooterClick={onFooterClick}
+    />
   );
 }
