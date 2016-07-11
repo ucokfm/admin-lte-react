@@ -38,11 +38,13 @@ const messages = [
 ];
 
 const onItemClick = (item) => {
-  alert(`hey ${item.name}`);
+  // eslint-disable-next-line no-alert
+  alert(`item ${item.id} clicked`);
 };
 
 const onFooterClick = () => {
-  alert('footer here');
+  // eslint-disable-next-line no-alert
+  alert('footer clicked');
 };
 
 export default function () {
