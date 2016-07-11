@@ -68,8 +68,22 @@ const tasks = [
   },
 ];
 
+const onItemClick = (item) => {
+  // eslint-disable-next-line no-alert
+  alert(`item ${item.id} clicked`);
+};
+
+const onFooterClick = () => {
+  // eslint-disable-next-line no-alert
+  alert('footer clicked');
+};
+
 export default function () {
   return (
-    <TasksMenu tasks={tasks} />
+    <TasksMenu
+      items={tasks}
+      onItemClick={onItemClick}
+      onFooterClick={onFooterClick}
+    />
   );
 }
