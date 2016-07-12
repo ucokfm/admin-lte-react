@@ -1,4 +1,5 @@
 import React from 'react';
+import { browserHistory } from 'react-router';
 
 import SidebarMenuWrapper from '../../../lib/sidebar/SidebarMenuWrapper';
 import SidebarMenuHeader from '../../../lib/sidebar/SidebarMenuHeader';
@@ -184,20 +185,22 @@ const mainMenus = [
 ];
 
 function onClick(item) {
-  // eslint-disable-next-line no-alert
-  alert(`menu ${item.id} clicked`);
+  if (item.url) {
+    browserHistory.push(item.url);
+  }
 }
 
 function onItemClick(item) {
-  // eslint-disable-next-line no-alert
-  alert(`sub menu ${item.id} clicked`);
+  if (item.url) {
+    browserHistory.push(item.url);
+  }
 }
 
 
 export default function SidebarMenu() {
   return (
     <SidebarMenuWrapper>
-      <SidebarMenuHeader title="MAIN MENU" />
+      <SidebarMenuHeader title="MAIN NAVIGATION" />
       {mainMenus.map((menu) =>
         <TreeMenu
           {...menu}
