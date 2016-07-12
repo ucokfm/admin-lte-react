@@ -181,6 +181,7 @@ const mainMenus = [
     icon: 'fa fa-book',
     title: 'Documentation',
     url: '/documentation',
+    showLabel: false,
   },
 ];
 
