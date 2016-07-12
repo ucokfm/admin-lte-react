@@ -187,18 +187,21 @@ const mainMenus = [
 
 const labelsMenus = [
   {
+    key: 91,
     id: 91,
     iconColor: 'red',
     title: 'Important',
     showLabel: false,
   },
   {
+    key: 92,
     id: 92,
     iconColor: 'yellow',
     title: 'Warning',
     showLabel: false,
   },
   {
+    key: 93,
     id: 93,
     iconColor: 'aqua',
     title: 'Information',
