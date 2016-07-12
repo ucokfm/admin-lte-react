@@ -68,15 +68,15 @@ const tasks = [
   },
 ];
 
-const onItemClick = (item) => {
+function onItemClick(item) {
   // eslint-disable-next-line no-alert
   alert(`item ${item.id} clicked`);
-};
+}
 
-const onFooterClick = () => {
+function onFooterClick() {
   // eslint-disable-next-line no-alert
   alert('footer clicked');
-};
+}
 
 export default function () {
   return (

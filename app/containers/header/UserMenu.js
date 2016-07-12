@@ -10,15 +10,15 @@ const user = {
   online: true,
 };
 
-const onLinkClick = (link) => {
+function onLinkClick(link) {
   // eslint-disable-next-line no-alert
   alert(`route to ${link.url}`);
-};
+}
 
-const onButtonClick = (button) => {
+function onButtonClick(button) {
   // eslint-disable-next-line no-alert
   alert(`button ${button.text} clicked`);
-};
+}
 
 export default function () {
   return (
