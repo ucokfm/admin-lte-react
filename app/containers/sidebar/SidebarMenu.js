@@ -1,14 +1,16 @@
 import React from 'react';
 
-import SidebarMenu from '../../../lib/sidebar/SidebarMenu';
+import SidebarMenuWrapper from '../../../lib/sidebar/SidebarMenuWrapper';
+import SidebarMenuHeader from '../../../lib/sidebar/SidebarMenuHeader';
+import TreeMenu from '../../../lib/sidebar/TreeMenu';
 
-const menus = [
+const mainMenus = [
   {
     key: 1,
     id: 1,
     icon: 'fa fa-dashboard',
     title: 'Dashboard',
-    menus: [
+    items: [
       { key: 11, id: 11, title: 'Dashboard v1', url: '/dashboard/v1' },
       { key: 12, id: 12, title: 'Dashboard v2', url: '/dashboard/v2' },
     ],
@@ -19,7 +21,7 @@ const menus = [
     icon: 'fa fa-files-o',
     title: 'Layout Options',
     label: '4',
-    menus: [
+    items: [
       { key: 21, id: 21, title: 'Top Navigation' },
       { key: 22, id: 22, title: 'Boxed' },
       { key: 23, id: 23, title: 'Fixed' },
@@ -40,7 +42,7 @@ const menus = [
     id: 4,
     icon: 'fa fa-pie-chart',
     title: 'Charts',
-    menus: [
+    items: [
       { key: 41, id: 41, title: 'ChartJS' },
       { key: 42, id: 42, title: 'Morris' },
       { key: 43, id: 43, title: 'Flot' },
@@ -52,7 +54,7 @@ const menus = [
     id: 5,
     icon: 'fa fa-laptop',
     title: 'UI Elements',
-    menus: [
+    items: [
       { key: 51, id: 51, title: 'General' },
       { key: 52, id: 52, title: 'Icons' },
       { key: 53, id: 53, title: 'Buttons' },
@@ -66,7 +68,7 @@ const menus = [
     id: 6,
     icon: 'fa fa-edit',
     title: 'Forms',
-    menus: [
+    items: [
       { key: 61, id: 61, title: 'General Elements' },
       { key: 62, id: 62, title: 'Advanced Elements' },
       { key: 63, id: 63, title: 'Editors' },
@@ -77,7 +79,7 @@ const menus = [
     id: 7,
     icon: 'fa fa-table',
     title: 'Tables',
-    menus: [
+    items: [
       { key: 71, id: 71, title: 'Simple tables' },
       { key: 72, id: 72, title: 'Data tables' },
     ],
@@ -97,7 +99,7 @@ const menus = [
     title: 'Mailbox',
     label: '12',
     labelColor: 'yellow',
-    menus: [
+    items: [
       {
         key: 91,
         id: 91,
@@ -125,7 +127,7 @@ const menus = [
     id: 10,
     icon: 'fa fa-folder',
     title: 'Examples',
-    menus: [
+    items: [
       { key: 101, id: 101, title: 'Invoice' },
       { key: 102, id: 102, title: 'Profile' },
       { key: 103, id: 103, title: 'Login' },
@@ -142,17 +144,17 @@ const menus = [
     id: 11,
     icon: 'fa fa-share',
     title: 'Multilevel',
-    menus: [
+    items: [
       { key: 111, id: 111, title: 'Level One', url: '/level-one' },
       {
         key: 112,
         id: 112,
         title: 'Level One',
-        menus: [
+        items: [
           { key: 1121, id: 1121, title: 'Level Two', url: '/level-two' },
           { key: 1122, id: 1122,
             title: 'Level Two',
-            menus: [
+            items: [
               {
                 key: 112201,
                 id: 112201,
@@ -181,19 +183,29 @@ const menus = [
   },
 ];
 
-function onItemClick(item) {
-  if (item.url) {
-    // eslint-disable-next-line no-alert
-    alert(`route to ${item.url}`);
-  }
+function onClick(item) {
+  // eslint-disable-next-line no-alert
+  alert(`menu ${item.id} clicked`);
 }
 
-export default function () {
+function onItemClick(item) {
+  // eslint-disable-next-line no-alert
+  alert(`sub menu ${item.id} clicked`);
+}
+
+
+export default function SidebarMenu() {
   return (
-    <SidebarMenu
-      title="MAIN NAVIGATION"
-      items={menus}
-      onItemClick={onItemClick}
-    />
+    <SidebarMenuWrapper>
+      <SidebarMenuHeader title="MAIN MENU" />
+      {mainMenus.map((menu) =>
+        <TreeMenu
+          {...menu}
+          onClick={() => onClick(menu)}
+          onItemClick={onItemClick}
+        />
+      )}
+      <SidebarMenuHeader title="LABELS" />
+    </SidebarMenuWrapper>
   );
 }

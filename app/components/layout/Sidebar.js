@@ -3,16 +3,14 @@ import SidebarWrapper from '../../../lib/sidebar/SidebarWrapper';
 
 import UserPanel from '../../containers/sidebar/UserPanel';
 import SidebarSearch from '../../containers/sidebar/SidebarSearch';
-import MainMenu from '../../containers/sidebar/MainMenu';
-import LabelsMenu from '../../containers/sidebar/LabelsMenu';
+import SidebarMenu from '../../containers/sidebar/SidebarMenu';
 
 export default function Sidebar() {
   return (
     <SidebarWrapper>
       <UserPanel />
       <SidebarSearch />
-      <MainMenu />
-      <LabelsMenu />
+      <SidebarMenu />
     </SidebarWrapper>
   );
 }
