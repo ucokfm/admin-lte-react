@@ -185,6 +185,28 @@ const mainMenus = [
   },
 ];
 
+const labelsMenus = [
+  {
+    id: 91,
+    iconColor: 'red',
+    title: 'Important',
+    showLabel: false,
+  },
+  {
+    id: 92,
+    iconColor: 'yellow',
+    title: 'Warning',
+    showLabel: false,
+  },
+  {
+    id: 93,
+    iconColor: 'aqua',
+    title: 'Information',
+    showLabel: false,
+  },
+];
+
+
 function onClick(item) {
   if (item.url) {
     browserHistory.push(item.url);
@@ -210,6 +232,13 @@ export default function SidebarMenu() {
         />
       )}
       <SidebarMenuHeader title="LABELS" />
+      {labelsMenus.map((menu) =>
+        <TreeMenu
+          {...menu}
+          onClick={() => onClick(menu)}
+          onItemClick={onItemClick}
+        />
+      )}
     </SidebarMenuWrapper>
   );
 }
