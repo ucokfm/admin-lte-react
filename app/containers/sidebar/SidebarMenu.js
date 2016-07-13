@@ -210,18 +210,11 @@ const labelsMenus = [
 ];
 
 
-function onClick(item) {
+function onMenuClick(item) {
   if (item.url) {
     browserHistory.push(item.url);
   }
 }
-
-function onItemClick(item) {
-  if (item.url) {
-    browserHistory.push(item.url);
-  }
-}
-
 
 export default function SidebarMenu() {
   return (
@@ -230,16 +223,16 @@ export default function SidebarMenu() {
       {mainMenus.map((menu) =>
         <TreeMenu
           {...menu}
-          onClick={() => onClick(menu)}
-          onItemClick={onItemClick}
+          onClick={() => onMenuClick(menu)}
+          onItemClick={onMenuClick}
         />
       )}
       <SidebarMenuHeader title="LABELS" />
       {labelsMenus.map((menu) =>
         <TreeMenu
           {...menu}
-          onClick={() => onClick(menu)}
-          onItemClick={onItemClick}
+          onClick={() => onMenuClick(menu)}
+          onItemClick={onMenuClick}
         />
       )}
     </SidebarMenuWrapper>
