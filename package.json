@@ -1,6 +1,6 @@
 {
   "name": "admin-lte-react",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "AdminLTE react components",
   "scripts": {
     "build": "npm run build:babel && npm run build:copy && npm run build:move",
