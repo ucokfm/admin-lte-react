@@ -7,7 +7,7 @@ module.exports = {
     'react-hot-loader/patch',
     'webpack-dev-server/client?http://localhost:3000',
     'webpack/hot/only-dev-server',
-    './app/index.js'
+    './src/index'
   ],
   output: {
     path: path.join(__dirname, 'dist'),
@@ -22,7 +22,7 @@ module.exports = {
       test: /\.js$/,
       loaders: ['babel'],
       include: [
-        path.join(__dirname, 'app'),
+        path.join(__dirname, 'src'),
         path.join(__dirname, 'lib')
       ]
     }]
