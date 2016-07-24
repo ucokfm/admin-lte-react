@@ -1,6 +1,6 @@
 import React from 'react';
 
-import UserMenu from '../../../lib/header/UserMenu';
+import UserMenu from '../../lib/header/UserMenu';
 
 const user = {
   name: 'Alexander Pierce',

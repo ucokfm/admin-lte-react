@@ -1,9 +1,9 @@
 import React from 'react';
-import PageWrapper from '../../../lib/page/PageWrapper';
-import PageHeader from '../../../lib/page/PageHeader';
-import Breadcrumb from '../../../lib/page/Breadcrumb';
-import PageContent from '../../../lib/page/PageContent';
-import InfoBox from '../../../lib/widgets/InfoBox';
+import PageWrapper from '../../lib/page/PageWrapper';
+import PageHeader from '../../lib/page/PageHeader';
+import Breadcrumb from '../../lib/page/Breadcrumb';
+import PageContent from '../../lib/page/PageContent';
+import InfoBox from '../../lib/widgets/InfoBox';
 
 export default function DashboardTwo() {
   return (

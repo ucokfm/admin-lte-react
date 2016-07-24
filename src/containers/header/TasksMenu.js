@@ -1,6 +1,6 @@
 import React from 'react';
 
-import TasksMenu from '../../../lib/header/TasksMenu';
+import TasksMenu from '../../lib/header/TasksMenu';
 
 const tasks = [
   {

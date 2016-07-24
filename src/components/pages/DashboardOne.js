@@ -1,9 +1,9 @@
 import React from 'react';
-import PageWrapper from '../../../lib/page/PageWrapper';
-import PageHeader from '../../../lib/page/PageHeader';
-import Breadcrumb from '../../../lib/page/Breadcrumb';
-import PageContent from '../../../lib/page/PageContent';
-import SmallBox from '../../../lib/widgets/SmallBox';
+import PageWrapper from '../../lib/page/PageWrapper';
+import PageHeader from '../../lib/page/PageHeader';
+import Breadcrumb from '../../lib/page/Breadcrumb';
+import PageContent from '../../lib/page/PageContent';
+import SmallBox from '../../lib/widgets/SmallBox';
 
 export default function DashboardOne() {
   return (

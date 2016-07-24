@@ -4,7 +4,7 @@
   "description": "AdminLTE react components",
   "scripts": {
     "build": "npm run build:babel && npm run build:copy && npm run build:move",
-    "build:babel": "babel lib/ --out-dir build",
+    "build:babel": "babel src/lib/ --out-dir build",
     "build:copy": "babel-node ./scripts/copy-files.js",
     "build:move": "babel-node ./scripts/move-files.js",
     "clean": "rimraf build",

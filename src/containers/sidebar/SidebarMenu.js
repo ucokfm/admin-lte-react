@@ -1,9 +1,9 @@
 import React from 'react';
 import { browserHistory } from 'react-router';
 
-import SidebarMenuWrapper from '../../../lib/sidebar/SidebarMenuWrapper';
-import SidebarMenuHeader from '../../../lib/sidebar/SidebarMenuHeader';
-import TreeMenu from '../../../lib/sidebar/TreeMenu';
+import SidebarMenuWrapper from '../../lib/sidebar/SidebarMenuWrapper';
+import SidebarMenuHeader from '../../lib/sidebar/SidebarMenuHeader';
+import TreeMenu from '../../lib/sidebar/TreeMenu';
 
 const mainMenus = [
   {
