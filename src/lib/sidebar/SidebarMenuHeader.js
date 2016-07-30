@@ -4,8 +4,10 @@ const propTypes = {
   title: PropTypes.string,
 };
 
-export default function SidebarMenuHeader({ title }) {
+function SidebarMenuHeader({ title }) {
   return <li className="header">{title}</li>;
 }
 
 SidebarMenuHeader.propTypes = propTypes;
+
+export default SidebarMenuHeader;

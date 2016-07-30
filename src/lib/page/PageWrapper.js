@@ -4,7 +4,7 @@ const propTypes = {
   children: PropTypes.node,
 };
 
-export default class PageWrapper extends Component {
+class PageWrapper extends Component {
   componentDidMount() {
     if (window.$ && window.$.AdminLTE) {
       window.$.AdminLTE.layout.fix();
@@ -21,3 +21,5 @@ export default class PageWrapper extends Component {
 }
 
 PageWrapper.propTypes = propTypes;
+
+export default PageWrapper;

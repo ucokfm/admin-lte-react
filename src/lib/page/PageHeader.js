@@ -6,7 +6,7 @@ const propTypes = {
   children: PropTypes.node,
 };
 
-export default function PageHeader({ title, description, children }) {
+function PageHeader({ title, description, children }) {
   return (
     <section className="content-header">
       <h1>
@@ -18,3 +18,5 @@ export default function PageHeader({ title, description, children }) {
 }
 
 PageHeader.propTypes = propTypes;
+
+export default PageHeader;

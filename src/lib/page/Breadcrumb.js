@@ -6,7 +6,7 @@ const propTypes = {
   items: PropTypes.array,
 };
 
-export default class Breadcrumb extends Component {
+class Breadcrumb extends Component {
   constructor(props) {
     super(props);
     this.renderItems = this.renderItems.bind(this);
@@ -26,3 +26,5 @@ export default class Breadcrumb extends Component {
 }
 
 Breadcrumb.propTypes = propTypes;
+
+export default Breadcrumb;

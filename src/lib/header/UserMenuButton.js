@@ -11,7 +11,7 @@ const defaultProps = {
   align: 'right',
 };
 
-export default function UserMenuButton({ text, align, onClick }) {
+function UserMenuButton({ text, align, onClick }) {
   return (
     <div className={`pull-${align}`}>
       <a
@@ -26,3 +26,5 @@ export default function UserMenuButton({ text, align, onClick }) {
 
 UserMenuButton.propTypes = propTypes;
 UserMenuButton.defaultProps = defaultProps;
+
+export default UserMenuButton;

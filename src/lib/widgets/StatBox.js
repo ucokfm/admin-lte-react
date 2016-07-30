@@ -10,9 +10,10 @@ const propTypes = {
   color: PropTypes.string,
 };
 
-export default function StatBox(
-  { count, countSign, title, iconClasses, url, urlText, color }
-) {
+function StatBox({
+  count, countSign, title,
+  iconClasses, url, urlText, color,
+}) {
   return (
     <div className={`small-box bg-${color}`}>
       <div className="inner">
@@ -33,3 +34,5 @@ export default function StatBox(
 }
 
 StatBox.propTypes = propTypes;
+
+export default StatBox;

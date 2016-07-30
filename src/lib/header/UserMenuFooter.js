@@ -4,7 +4,7 @@ const propTypes = {
   children: PropTypes.node,
 };
 
-export default function UserMenuFooter({ children }) {
+function UserMenuFooter({ children }) {
   return (
     <li className="user-footer">
       {children}
@@ -13,3 +13,5 @@ export default function UserMenuFooter({ children }) {
 }
 
 UserMenuFooter.propTypes = propTypes;
+
+export default UserMenuFooter;

@@ -18,7 +18,7 @@ const defaultProps = {
   url: '/new-orders',
 };
 
-export default function SmallBox({ number, sign, text, icon, color, url }) {
+function SmallBox({ number, sign, text, icon, color, url }) {
   return (
     <div className="col-lg-3 col-xs-6">
       <div className={`small-box bg-${color}`}>
@@ -42,3 +42,5 @@ export default function SmallBox({ number, sign, text, icon, color, url }) {
 
 SmallBox.propTypes = propTypes;
 SmallBox.defaultProps = defaultProps;
+
+export default SmallBox;

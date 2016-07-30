@@ -9,7 +9,7 @@ const defaultProps = {
   placeholder: 'Search...',
 };
 
-export default function SidebarSearch({ placeholder, onSubmit }) {
+function SidebarSearch({ placeholder, onSubmit }) {
   let inputText = '';
 
   function handleInputTextChange(event) {
@@ -45,3 +45,5 @@ export default function SidebarSearch({ placeholder, onSubmit }) {
 
 SidebarSearch.propTypes = propTypes;
 SidebarSearch.defaultProps = defaultProps;
+
+export default SidebarSearch;

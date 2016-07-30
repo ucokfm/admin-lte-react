@@ -20,7 +20,7 @@ const defaultProps = {
   items: [],
 };
 
-export default class TreeMenu extends Component {
+class TreeMenu extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -105,3 +105,5 @@ export default class TreeMenu extends Component {
 
 TreeMenu.propTypes = propTypes;
 TreeMenu.defaultProps = defaultProps;
+
+export default TreeMenu;

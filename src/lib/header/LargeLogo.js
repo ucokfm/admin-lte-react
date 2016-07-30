@@ -4,7 +4,7 @@ const propTypes = {
   children: PropTypes.node,
 };
 
-export default function LargeLogo({ children }) {
+function LargeLogo({ children }) {
   return (
     <span className="logo-lg">
       {children}
@@ -13,3 +13,5 @@ export default function LargeLogo({ children }) {
 }
 
 LargeLogo.propTypes = propTypes;
+
+export default LargeLogo;

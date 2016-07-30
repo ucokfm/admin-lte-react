@@ -4,7 +4,7 @@ const propTypes = {
   children: PropTypes.node,
 };
 
-export default function UserMenuBody({ children }) {
+function UserMenuBody({ children }) {
   return (
     <li className="user-body">
       <div className="row">
@@ -15,3 +15,5 @@ export default function UserMenuBody({ children }) {
 }
 
 UserMenuBody.propTypes = propTypes;
+
+export default UserMenuBody;

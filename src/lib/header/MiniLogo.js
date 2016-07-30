@@ -4,7 +4,7 @@ const propTypes = {
   children: PropTypes.node,
 };
 
-export default function MiniLogo({ children }) {
+function MiniLogo({ children }) {
   return (
     <span className="logo-mini">
       {children}
@@ -13,3 +13,5 @@ export default function MiniLogo({ children }) {
 }
 
 MiniLogo.propTypes = propTypes;
+
+export default MiniLogo;

@@ -14,7 +14,7 @@ const defaultProps = {
   statusText: 'Online',
 };
 
-export default function UserPanel({ image, name, statusIcon, statusText }) {
+function UserPanel({ image, name, statusIcon, statusText }) {
   return (
     <div className="user-panel">
       <div className="pull-left image">
@@ -30,3 +30,5 @@ export default function UserPanel({ image, name, statusIcon, statusText }) {
 
 UserPanel.propTypes = propTypes;
 UserPanel.defaultProps = defaultProps;
+
+export default UserPanel;

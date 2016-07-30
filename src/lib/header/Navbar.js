@@ -9,7 +9,7 @@ const defaultProps = {
   controlbarIcon: 'fa fa-gears',
 };
 
-export default function Navbar({ controlbarIcon, children }) {
+function Navbar({ controlbarIcon, children }) {
   return (
     <nav className="navbar navbar-static-top" role="navigation">
       <a
@@ -39,3 +39,5 @@ export default function Navbar({ controlbarIcon, children }) {
 
 Navbar.propTypes = propTypes;
 Navbar.defaultProps = defaultProps;
+
+export default Navbar;

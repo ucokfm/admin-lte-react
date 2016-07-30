@@ -4,7 +4,7 @@ const propTypes = {
   children: PropTypes.node,
 };
 
-export default function SidebarWrapper({ children }) {
+function SidebarWrapper({ children }) {
   return (
     <aside className="main-sidebar">
       <section className="sidebar">
@@ -15,3 +15,5 @@ export default function SidebarWrapper({ children }) {
 }
 
 SidebarWrapper.propTypes = propTypes;
+
+export default SidebarWrapper;

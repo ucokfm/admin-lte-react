@@ -11,7 +11,7 @@ const propTypes = {
   color: PropTypes.string,
 };
 
-export default class InfoBox extends Component {
+class InfoBox extends Component {
   getBoxClasses() {
     const bgColor = {};
     bgColor[`bg-${this.props.color}`] = this.hasProgress();
@@ -68,3 +68,5 @@ export default class InfoBox extends Component {
 }
 
 InfoBox.propTypes = propTypes;
+
+export default InfoBox;

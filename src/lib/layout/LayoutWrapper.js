@@ -13,7 +13,7 @@ const defaultProps = {
   fixed: false,
 };
 
-export default class LayoutWrapper extends Component {
+class LayoutWrapper extends Component {
   componentWillMount() {
     const classnames = classNames(
       { 'hold-transition': this.props.fixed },
@@ -36,3 +36,5 @@ export default class LayoutWrapper extends Component {
 
 LayoutWrapper.propTypes = propTypes;
 LayoutWrapper.defaultProps = defaultProps;
+
+export default LayoutWrapper;

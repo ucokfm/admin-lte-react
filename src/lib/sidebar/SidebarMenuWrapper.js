@@ -4,7 +4,7 @@ const propTypes = {
   children: PropTypes.node,
 };
 
-export default function SidebarMenuWrapper({ children }) {
+function SidebarMenuWrapper({ children }) {
   return (
     <ul className="sidebar-menu">
       {children}
@@ -13,3 +13,5 @@ export default function SidebarMenuWrapper({ children }) {
 }
 
 SidebarMenuWrapper.propTypes = propTypes;
+
+export default SidebarMenuWrapper;

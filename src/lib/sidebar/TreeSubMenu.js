@@ -17,7 +17,7 @@ const defaultProps = {
   items: [],
 };
 
-export default class TreeSubMenu extends Component {
+class TreeSubMenu extends Component {
   constructor(props) {
     super(props);
     this.renderItem = this.renderItems.bind(this);
@@ -66,3 +66,5 @@ export default class TreeSubMenu extends Component {
 
 TreeSubMenu.propTypes = propTypes;
 TreeSubMenu.defaultProps = defaultProps;
+
+export default TreeSubMenu;

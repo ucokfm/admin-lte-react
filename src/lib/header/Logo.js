@@ -5,7 +5,7 @@ const propTypes = {
   onClick: PropTypes.func,
 };
 
-export default function Logo({ children, onClick }) {
+function Logo({ children, onClick }) {
   return (
     <a className="logo" style={{ cursor: 'pointer' }} onClick={onClick}>
       {children}
@@ -14,3 +14,5 @@ export default function Logo({ children, onClick }) {
 }
 
 Logo.propTypes = propTypes;
+
+export default Logo;

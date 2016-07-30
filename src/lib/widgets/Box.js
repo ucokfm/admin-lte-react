@@ -21,7 +21,7 @@ const defaultProps = {
   loading: false,
 };
 
-export default class Box extends Component {
+class Box extends Component {
   getClasses() {
     return classNames(
       'box',
@@ -97,3 +97,5 @@ export default class Box extends Component {
 
 Box.propTypes = propTypes;
 Box.defaultProps = defaultProps;
+
+export default Box;

@@ -7,7 +7,7 @@ const propTypes = {
   onClick: PropTypes.func,
 };
 
-export default function TasksMenuItem({ progress, color, children, onClick }) {
+function TasksMenuItem({ progress, color, children, onClick }) {
   return (
     <li>
       <a style={{ cursor: 'pointer' }} onClick={onClick}>
@@ -31,3 +31,5 @@ export default function TasksMenuItem({ progress, color, children, onClick }) {
 }
 
 TasksMenuItem.propTypes = propTypes;
+
+export default TasksMenuItem;

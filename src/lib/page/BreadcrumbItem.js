@@ -7,7 +7,7 @@ const propTypes = {
   url: PropTypes.string,
 };
 
-export default function BreadcrumbItem({ icon, title, url }) {
+function BreadcrumbItem({ icon, title, url }) {
   return (
     <li className={classNames({ active: !url })}>
       {url
@@ -19,3 +19,5 @@ export default function BreadcrumbItem({ icon, title, url }) {
 }
 
 BreadcrumbItem.propTypes = propTypes;
+
+export default BreadcrumbItem;

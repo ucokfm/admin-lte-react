@@ -12,7 +12,7 @@ const defaultProps = {
   items: [],
 };
 
-export default function MessagesMenu({ items, onItemClick, onFooterClick }) {
+function MessagesMenu({ items, onItemClick, onFooterClick }) {
   const count = items.length;
   return (
     <li className="dropdown messages-menu">
@@ -50,3 +50,5 @@ export default function MessagesMenu({ items, onItemClick, onFooterClick }) {
 
 MessagesMenu.propTypes = propTypes;
 MessagesMenu.defaultProps = defaultProps;
+
+export default MessagesMenu;

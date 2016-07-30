@@ -4,7 +4,7 @@ const propTypes = {
   children: PropTypes.node,
 };
 
-export default function HeaderWrapper({ children }) {
+function HeaderWrapper({ children }) {
   return (
     <header className="main-header">
       {children}
@@ -13,3 +13,5 @@ export default function HeaderWrapper({ children }) {
 }
 
 HeaderWrapper.propTypes = propTypes;
+
+export default HeaderWrapper;

@@ -4,7 +4,7 @@ const propTypes = {
   children: PropTypes.node,
 };
 
-export default function PageContent({ children }) {
+function PageContent({ children }) {
   return (
     <section className="content">
       {children}
@@ -13,3 +13,5 @@ export default function PageContent({ children }) {
 }
 
 PageContent.propTypes = propTypes;
+
+export default PageContent;

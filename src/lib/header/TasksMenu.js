@@ -12,7 +12,7 @@ const defaultProps = {
   items: [],
 };
 
-export default function TasksMenu({ items, onItemClick, onFooterClick }) {
+function TasksMenu({ items, onItemClick, onFooterClick }) {
   const count = items.length;
   return (
     <li className="dropdown tasks-menu">
@@ -50,3 +50,5 @@ export default function TasksMenu({ items, onItemClick, onFooterClick }) {
 
 TasksMenu.propTypes = propTypes;
 TasksMenu.defaultProps = defaultProps;
+
+export default TasksMenu;
