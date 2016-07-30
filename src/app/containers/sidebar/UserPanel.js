@@ -1,6 +1,6 @@
 import React from 'react';
 
-import UserPanel from '../../lib/sidebar/UserPanel';
+import UserPanel from '../../../lib/sidebar/UserPanel';
 
 const user = {
   name: 'Alexander Pierce',

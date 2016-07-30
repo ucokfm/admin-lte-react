@@ -1,9 +1,9 @@
 import React, { PropTypes } from 'react';
 
-import PageWrapper from '../../lib/page/PageWrapper';
-import PageHeader from '../../lib/page/PageHeader';
-import Breadcrumb from '../../lib/page/Breadcrumb';
-import PageContent from '../../lib/page/PageContent';
+import PageWrapper from '../../../lib/page/PageWrapper';
+import PageHeader from '../../../lib/page/PageHeader';
+import Breadcrumb from '../../../lib/page/Breadcrumb';
+import PageContent from '../../../lib/page/PageContent';
 
 const propTypes = {
   title: PropTypes.string,

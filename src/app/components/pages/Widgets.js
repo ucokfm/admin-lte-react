@@ -1,11 +1,11 @@
 import React from 'react';
-import PageWrapper from '../../lib/page/PageWrapper';
-import PageHeader from '../../lib/page/PageHeader';
-import Breadcrumb from '../../lib/page/Breadcrumb';
-import PageContent from '../../lib/page/PageContent';
-import InfoBox from '../../lib/widgets/InfoBox';
-import StatBox from '../../lib/widgets/StatBox';
-import Box from '../../lib/widgets/Box';
+import PageWrapper from '../../../lib/page/PageWrapper';
+import PageHeader from '../../../lib/page/PageHeader';
+import Breadcrumb from '../../../lib/page/Breadcrumb';
+import PageContent from '../../../lib/page/PageContent';
+import InfoBox from '../../../lib/widgets/InfoBox';
+import StatBox from '../../../lib/widgets/StatBox';
+import Box from '../../../lib/widgets/Box';
 
 export default function Widgets() {
   return (

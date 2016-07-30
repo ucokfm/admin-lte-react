@@ -1,10 +1,10 @@
 import React from 'react';
 
-import ControlbarWrapper from '../../lib/controlbar/ControlbarWrapper';
-import TabHeader from '../../lib/controlbar/TabHeader';
-import TabIcon from '../../lib/controlbar/TabIcon';
-import TabContent from '../../lib/controlbar/TabContent';
-import TabPane from '../../lib/controlbar/TabPane';
+import ControlbarWrapper from '../../../lib/controlbar/ControlbarWrapper';
+import TabHeader from '../../../lib/controlbar/TabHeader';
+import TabIcon from '../../../lib/controlbar/TabIcon';
+import TabContent from '../../../lib/controlbar/TabContent';
+import TabPane from '../../../lib/controlbar/TabPane';
 
 export default function Footer() {
   return (

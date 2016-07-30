@@ -1,6 +1,6 @@
 import React from 'react';
 
-import MessagesMenu from '../../lib/header/MessagesMenu';
+import MessagesMenu from '../../../lib/header/MessagesMenu';
 
 const messages = [
   {

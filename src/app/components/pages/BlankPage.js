@@ -1,8 +1,8 @@
 import React from 'react';
-import PageWrapper from '../../lib/page/PageWrapper';
-import PageHeader from '../../lib/page/PageHeader';
-import Breadcrumb from '../../lib/page/Breadcrumb';
-import PageContent from '../../lib/page/PageContent';
+import PageWrapper from '../../../lib/page/PageWrapper';
+import PageHeader from '../../../lib/page/PageHeader';
+import Breadcrumb from '../../../lib/page/Breadcrumb';
+import PageContent from '../../../lib/page/PageContent';
 
 export default function BlankPage() {
   return (

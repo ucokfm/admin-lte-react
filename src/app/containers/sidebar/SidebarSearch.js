@@ -1,6 +1,6 @@
 import React from 'react';
 
-import SidebarSearch from '../../lib/sidebar/SidebarSearch';
+import SidebarSearch from '../../../lib/sidebar/SidebarSearch';
 
 function onSubmit(text) {
   // eslint-disable-next-line no-alert

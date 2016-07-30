@@ -1,6 +1,6 @@
 import React from 'react';
 
-import NotificationsMenu from '../../lib/header/NotificationsMenu';
+import NotificationsMenu from '../../../lib/header/NotificationsMenu';
 
 const notifications = [
   {

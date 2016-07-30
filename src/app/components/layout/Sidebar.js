@@ -1,5 +1,5 @@
 import React from 'react';
-import SidebarWrapper from '../../lib/sidebar/SidebarWrapper';
+import SidebarWrapper from '../../../lib/sidebar/SidebarWrapper';
 
 import UserPanel from '../../containers/sidebar/UserPanel';
 import SidebarSearch from '../../containers/sidebar/SidebarSearch';

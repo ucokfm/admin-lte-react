@@ -1,6 +1,6 @@
 import React, { PropTypes } from 'react';
 
-import LayoutWrapper from '../../lib/layout/LayoutWrapper';
+import LayoutWrapper from '../../../lib/layout/LayoutWrapper';
 
 import Header from './Header';
 import Sidebar from './Sidebar';
