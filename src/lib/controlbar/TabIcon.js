@@ -5,7 +5,7 @@ const propTypes = {
   icon: PropTypes.string,
 };
 
-export default function TabIcon({ href, icon }) {
+function TabIcon({ href, icon }) {
   return (
     <li>
       <a href={href} data-toggle="tab">
@@ -16,3 +16,5 @@ export default function TabIcon({ href, icon }) {
 }
 
 TabIcon.propTypes = propTypes;
+
+export default TabIcon;

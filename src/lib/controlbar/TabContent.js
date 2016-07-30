@@ -4,7 +4,7 @@ const propTypes = {
   children: PropTypes.node,
 };
 
-export default function TabContent({ children }) {
+function TabContent({ children }) {
   return (
     <div className="tab-content">
       {children}
@@ -13,3 +13,5 @@ export default function TabContent({ children }) {
 }
 
 TabContent.propTypes = propTypes;
+
+export default TabContent;

@@ -4,7 +4,7 @@ const propTypes = {
   children: PropTypes.node,
 };
 
-export default function TabHeader({ children }) {
+function TabHeader({ children }) {
   return (
     <ul className="nav nav-tabs nav-justified control-sidebar-tabs">
       {children}
@@ -13,3 +13,5 @@ export default function TabHeader({ children }) {
 }
 
 TabHeader.propTypes = propTypes;
+
+export default TabHeader;

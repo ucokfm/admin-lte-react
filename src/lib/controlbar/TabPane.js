@@ -5,7 +5,7 @@ const propTypes = {
   children: PropTypes.node,
 };
 
-export default function TabPane({ id, children }) {
+function TabPane({ id, children }) {
   return (
     <div className="tab-pane" id={id}>
       {children}
@@ -14,3 +14,5 @@ export default function TabPane({ id, children }) {
 }
 
 TabPane.propTypes = propTypes;
+
+export default TabPane;

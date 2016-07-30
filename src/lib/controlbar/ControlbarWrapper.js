@@ -4,7 +4,7 @@ const propTypes = {
   children: PropTypes.node,
 };
 
-export default function ControlbarWrapper({ children }) {
+function ControlbarWrapper({ children }) {
   return (
     <aside className="control-sidebar control-sidebar-dark">
       {children}
@@ -13,3 +13,5 @@ export default function ControlbarWrapper({ children }) {
 }
 
 ControlbarWrapper.propTypes = propTypes;
+
+export default ControlbarWrapper;
