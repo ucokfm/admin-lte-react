@@ -4,7 +4,7 @@ const propTypes = {
   children: PropTypes.node,
 };
 
-export default function FooterWrapper({ children }) {
+function FooterWrapper({ children }) {
   return (
     <footer className="main-footer">
       {children}
@@ -13,3 +13,5 @@ export default function FooterWrapper({ children }) {
 }
 
 FooterWrapper.propTypes = propTypes;
+
+export default FooterWrapper;
