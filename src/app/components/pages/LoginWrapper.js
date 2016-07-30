@@ -1,4 +1,3 @@
-import $ from 'admin-lte/plugins/jQuery/jquery-2.2.3.min';
 import React, { Component, PropTypes } from 'react';
 
 const propTypes = {
@@ -7,7 +6,7 @@ const propTypes = {
 
 export default class LoginBox extends Component {
   componentWillMount() {
-    $('body').addClass('hold-transition login-page');
+    window.$('body').addClass('hold-transition login-page');
   }
 
   render() {

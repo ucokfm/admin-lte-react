@@ -1,4 +1,3 @@
-import $ from 'admin-lte/plugins/jQuery/jquery-2.2.3.min';
 import React, { Component } from 'react';
 
 export default class SalesChart extends Component {
@@ -69,7 +68,7 @@ export default class SalesChart extends Component {
     });
 
     // Fix for charts under tabs
-    $('.box ul.nav a').on('shown.bs.tab', () => {
+    window.$('.box ul.nav a').on('shown.bs.tab', () => {
       area.redraw();
       donut.redraw();
       line.redraw();

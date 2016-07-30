@@ -1,4 +1,3 @@
-import $ from 'admin-lte/plugins/jQuery/jquery-2.2.3.min';
 import React, { Component, PropTypes } from 'react';
 import classNames from 'classnames';
 
@@ -21,7 +20,7 @@ class LayoutWrapper extends Component {
       { fixed: this.props.fixed },
       'sidebar-mini'
     );
-    $('body').addClass(classnames);
+    window.$('body').addClass(classnames);
   }
 
   render() {
