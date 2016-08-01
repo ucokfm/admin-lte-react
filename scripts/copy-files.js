@@ -8,10 +8,9 @@ const files = [
   'LICENSE',
 ];
 
-Promise.all(
-  files.map((file) => copyFile(file))
-)
-.then(() => createPackageFile());
+function resolveBuildPath(file) {
+  return path.resolve(__dirname, '../build/', path.basename(file));
+}
 
 function copyFile(file) {
   const buildPath = resolveBuildPath(file);
@@ -26,10 +25,6 @@ function copyFile(file) {
     );
   })
   .then(() => console.log(`Copied ${file} to ${buildPath}`));
-}
-
-function resolveBuildPath(file) {
-  return path.resolve(__dirname, '../build/', path.basename(file));
 }
 
 function createPackageFile() {
@@ -84,3 +79,8 @@ function createPackageFile() {
     });
   });
 }
+
+Promise.all(
+  files.map((file) => copyFile(file))
+)
+.then(() => createPackageFile());
