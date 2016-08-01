@@ -56,7 +56,6 @@
   },
   "dependencies": {
     "classnames": "^2.2.5",
-    "file-loader": "^0.9.0",
     "moment": "^2.13.0"
   }
 }
