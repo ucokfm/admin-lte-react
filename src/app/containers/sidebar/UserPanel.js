@@ -6,7 +6,7 @@ const user = {
   name: 'Alexander Pierce',
   title: 'Web Developer',
   joined: 'Nov. 2012',
-  // avatar,
+  avatar: 'node_modules/admin-lte/dist/img/user2-160x160.jpg',
   isOnline: true,
 };
 
