@@ -1,6 +1,6 @@
 {
   "name": "admin-lte-react",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "AdminLTE react components",
   "private": true,
   "scripts": {
