@@ -1,7 +1,5 @@
 import React, { PropTypes } from 'react';
 
-import avatar from '../../images/user.png';
-
 const propTypes = {
   image: PropTypes.string,
   name: PropTypes.string,
@@ -10,7 +8,7 @@ const propTypes = {
 };
 
 const defaultProps = {
-  image: avatar,
+  image: '/images/no-avatar.png',
   name: 'Full Name',
   statusIcon: 'fa fa-circle text-success',
   statusText: 'Online',

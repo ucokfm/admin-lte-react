@@ -17,7 +17,7 @@ const propTypes = {
 };
 
 const defaultProps = {
-  image: '/images/user.png',
+  image: '/images/no-avatar.png',
   name: 'Full Name',
   title: 'Title',
   description: 'Description',
