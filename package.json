@@ -2,6 +2,7 @@
   "name": "admin-lte-react",
   "version": "0.0.4",
   "description": "AdminLTE react components",
+  "private": true,
   "scripts": {
     "build": "npm run build:babel && npm run build:copy && npm run build:move",
     "build:babel": "babel src/lib/ --out-dir build",
@@ -10,6 +11,7 @@
     "clean": "rimraf build",
     "prebuild": "npm run clean",
     "prepublish": "npm run build",
+    "publish": "node ./scripts/publish.sh",
     "start": "node server.js",
     "lint": "eslint src"
   },
