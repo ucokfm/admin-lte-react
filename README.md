@@ -1,15 +1,9 @@
-##Installing
-```
-npm install --save admin-lte-react
-```
+##To start a new project using admin-lte-react
+- Look at project boilerplates in examples directory
+- Or just download and unzip [simple-admin.zip](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/ucokfm/admin-lte-react/tree/master/examples/simple-admin)
+- Learn how to use other components in this repo src/app directory
 
-##Usage
-``` javascript
-import React from 'react';
-
-import LayoutWrapper from 'admin-lte-react/LayoutWrapper';
-import HeaderWrapper from 'admin-lte-react/HeaderWrapper';
-import Logo from 'admin-lte-react/Logo';
-import MiniLogo from 'admin-lte-react/MiniLogo';
-import Navbar from 'admin-lte-react/Navbar';
-```
+##To contribute
+- Fork this repo
+- Add/Edit components in this repo src/lib directory
+- Pull Request
