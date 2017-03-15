@@ -26,9 +26,10 @@ function StatBox({
       <div className="icon">
         <i className={iconClasses}></i>
       </div>
+      {url &&
       <a href={url} className="small-box-footer">
         {urlText} <i className="fa fa-arrow-circle-right"></i>
-      </a>
+      </a>}
     </div>
   );
 }
