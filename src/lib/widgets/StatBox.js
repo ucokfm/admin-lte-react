@@ -1,4 +1,4 @@
-import React, { PropTypes } from 'react';
+import React, { Component, PropTypes } from 'react';
 
 const propTypes = {
   count: PropTypes.string,
@@ -10,28 +10,35 @@ const propTypes = {
   color: PropTypes.string,
 };
 
-function StatBox({
-  count, countSign, title,
-  iconClasses, url, urlText, color,
-}) {
-  return (
-    <div className={`small-box bg-${color}`}>
-      <div className="inner">
-        <h3>
-          {count}
-          <sup style={{ fontSize: 20 }}>{countSign}</sup>
-        </h3>
-        <p>{title}</p>
+class StatBox extends Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      count: props.count,
+    };
+  }
+
+  render() {
+    return (
+      <div className={`small-box bg-${this.props.color}`}>
+        <div className="inner">
+          <h3>
+            {this.state.count}
+            <sup style={{ fontSize: 20 }}>{this.props.countSign}</sup>
+          </h3>
+          <p>{this.props.title}</p>
+        </div>
+        <div className="icon">
+          <i className={this.props.iconClasses}></i>
+        </div>
+        {this.props.url &&
+        <a href={this.props.url} className="small-box-footer">
+          {this.props.urlText} <i className="fa fa-arrow-circle-right"></i>
+        </a>}
       </div>
-      <div className="icon">
-        <i className={iconClasses}></i>
-      </div>
-      {url &&
-      <a href={url} className="small-box-footer">
-        {urlText} <i className="fa fa-arrow-circle-right"></i>
-      </a>}
-    </div>
-  );
+    );
+  }
 }
 
 StatBox.propTypes = propTypes;
