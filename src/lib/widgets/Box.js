@@ -21,6 +21,13 @@ const defaultProps = {
   loading: false,
 };
 
+const childrenPropType = {
+  children: React.PropTypes.oneOfType([
+    React.PropTypes.arrayOf(React.PropTypes.node),
+    React.PropTypes.node,
+  ]),
+};
+
 class Box extends Component {
   getClasses() {
     return classNames(
@@ -95,7 +102,34 @@ class Box extends Component {
   }
 }
 
+function BoxBody(props) {
+  return (
+    <div className="box-body">
+        {props.children}
+    </div>
+  );
+}
+
+function BoxFooter(props) {
+  return (
+    <div className="box-footer">
+      {props.children}
+    </div>
+  );
+}
+
+BoxFooter.propTypes = {
+  children: childrenPropType,
+};
+
+BoxBody.propTypes = {
+  children: childrenPropType,
+};
+
 Box.propTypes = propTypes;
 Box.defaultProps = defaultProps;
+
+Box.Body = BoxBody;
+Box.Footer = BoxFooter;
 
 export default Box;
