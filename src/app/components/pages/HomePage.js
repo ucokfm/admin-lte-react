@@ -26,7 +26,14 @@ export default function HomePage() {
           expandable
           removable
         >
-          You can collapse or close this box window using right upper buttons.
+          <Box.Body>
+            You can collapse or close this box window using right upper buttons.
+          </Box.Body>
+
+          <Box.Footer>
+            The box can contain a footer too
+          </Box.Footer>
+
         </Box>
       </PageContent>
     </PageWrapper>
